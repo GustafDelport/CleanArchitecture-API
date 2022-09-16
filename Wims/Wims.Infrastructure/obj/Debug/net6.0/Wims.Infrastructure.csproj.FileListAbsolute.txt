@@ -10,3 +10,8 @@ C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Pro
 C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\refint\Wims.Infrastructure.dll
 C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.pdb
 C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\ref\Wims.Infrastructure.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\bin\Debug\net6.0\Wims.Application.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\bin\Debug\net6.0\Wims.Domain.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\bin\Debug\net6.0\Wims.Application.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\bin\Debug\net6.0\Wims.Domain.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.csproj.CopyComplete
