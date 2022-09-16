@@ -35,19 +35,11 @@
             });
             services.AddResponseCompression();
 
-
+            // Dependency Injections
             //==================================================================
             DependencyInjectionApplication.AddApplication(services); 
-            DependencyInjectionInfrastructure.AddInfrastructure(services);
-            //==================================================================
-
-            //services.AddLazyCache();
-
-            // Add DbContext using SQL Server Provider
-            //services.AddDbContext<DatabaseContext>(options =>
-            //    options.UseSqlServer(this.Configuration.GetConnectionString("BarStockControl")));
-
-            //DependencyInjection.AddApplication(services);
+            //DependencyInjectionInfrastructure.AddInfrastructure(services, configuration);
+            //==================================================================   
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -56,8 +48,6 @@
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            //app.UseMiddleware(typeof(ExceptionHandlerMiddleware));
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>

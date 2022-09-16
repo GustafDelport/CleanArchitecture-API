@@ -1,20 +1,32 @@
-namespace Wims.API
+var builder = WebApplication.CreateBuilder(args);
 {
-    using Microsoft.AspNetCore.Hosting;
-    using Wims.Api;
+    builder.Services.
 
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
+    builder.Services.AddControllers();
 
-        }
-        private static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
-    }
+    builder.Services.AddEndpointsApiExplorer();
+
+    builder.Services.AddSwaggerGen();
 }
+
+var app = builder.Build();
+{
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
+    app.UseHttpsRedirection();
+
+    app.UseAuthentication();
+
+    app.MapControllers();
+
+    app.Run();
+}
+
+
+
+
+//17:12
