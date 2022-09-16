@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6/Rl3nK2c35ejkRbpsKBbJ+JN9kD6bs7M39LeiXtO2s=",
+  "Source": "Wims.Api",
+  "BasePath": "_content/Wims.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

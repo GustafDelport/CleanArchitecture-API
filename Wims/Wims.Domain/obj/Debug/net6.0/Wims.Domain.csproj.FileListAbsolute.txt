@@ -1,0 +1,12 @@
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\bin\Debug\net6.0\Wims.Domain.deps.json
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\bin\Debug\net6.0\Wims.Domain.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\bin\Debug\net6.0\Wims.Domain.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\Wims.Domain.csproj.AssemblyReference.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\Wims.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\Wims.Domain.AssemblyInfoInputs.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\Wims.Domain.AssemblyInfo.cs
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\Wims.Domain.csproj.CoreCompileInputs.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\Wims.Domain.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\refint\Wims.Domain.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\Wims.Domain.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Domain\obj\Debug\net6.0\ref\Wims.Domain.dll

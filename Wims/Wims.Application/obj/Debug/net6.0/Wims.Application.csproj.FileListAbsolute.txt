@@ -1,0 +1,12 @@
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\bin\Debug\net6.0\Wims.Application.deps.json
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\bin\Debug\net6.0\Wims.Application.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\bin\Debug\net6.0\Wims.Application.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\Wims.Application.csproj.AssemblyReference.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\Wims.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\Wims.Application.AssemblyInfoInputs.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\Wims.Application.AssemblyInfo.cs
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\Wims.Application.csproj.CoreCompileInputs.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\Wims.Application.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\refint\Wims.Application.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\Wims.Application.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Application\obj\Debug\net6.0\ref\Wims.Application.dll

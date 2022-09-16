@@ -1,0 +1,12 @@
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\bin\Debug\net6.0\Wims.Contracts.deps.json
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\bin\Debug\net6.0\Wims.Contracts.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\bin\Debug\net6.0\Wims.Contracts.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\Wims.Contracts.csproj.AssemblyReference.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\Wims.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\Wims.Contracts.AssemblyInfoInputs.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\Wims.Contracts.AssemblyInfo.cs
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\Wims.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\Wims.Contracts.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\refint\Wims.Contracts.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\Wims.Contracts.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Contracts\obj\Debug\net6.0\ref\Wims.Contracts.dll

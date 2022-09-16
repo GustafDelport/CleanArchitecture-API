@@ -1,0 +1,12 @@
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\bin\Debug\net6.0\Wims.Infrastructure.deps.json
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\bin\Debug\net6.0\Wims.Infrastructure.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\bin\Debug\net6.0\Wims.Infrastructure.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.AssemblyInfo.cs
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\refint\Wims.Infrastructure.dll
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\Wims.Infrastructure.pdb
+C:\Users\gustaf.delport\OneDrive - Entelect Software (Pty) Ltd\Documents\Pet Projects\Wims\Wims-API\Wims\Wims.Infrastructure\obj\Debug\net6.0\ref\Wims.Infrastructure.dll

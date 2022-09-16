@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wims.Application\Wims.Application.csproj" />
+    <ProjectReference Include="..\Wims.Contracts\Wims.Contracts.csproj" />
+    <ProjectReference Include="..\Wims.Infrastructure\Wims.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
