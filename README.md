@@ -1,2 +1,2 @@
 # Wims-API
-What is my stock
+What is my stock Api
