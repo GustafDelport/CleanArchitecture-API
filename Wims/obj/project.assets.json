@@ -231,9 +231,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gustaf.delport\\OneDrive - Entelect Software (Pty) Ltd\\Documents\\Pet Projects\\Wims\\Wims-API\\Wims\\Wims.csproj",
-      "projectName": "Wims",
-      "projectPath": "C:\\Users\\gustaf.delport\\OneDrive - Entelect Software (Pty) Ltd\\Documents\\Pet Projects\\Wims\\Wims-API\\Wims\\Wims.csproj",
+      "projectUniqueName": "C:\\Users\\gustaf.delport\\OneDrive - Entelect Software (Pty) Ltd\\Documents\\Pet Projects\\Wims\\Wims-API\\Wims\\Wims.API.csproj",
+      "projectName": "Wims.API",
+      "projectPath": "C:\\Users\\gustaf.delport\\OneDrive - Entelect Software (Pty) Ltd\\Documents\\Pet Projects\\Wims\\Wims-API\\Wims\\Wims.API.csproj",
       "packagesPath": "C:\\Users\\gustaf.delport\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gustaf.delport\\OneDrive - Entelect Software (Pty) Ltd\\Documents\\Pet Projects\\Wims\\Wims-API\\Wims\\obj\\",
       "projectStyle": "PackageReference",
