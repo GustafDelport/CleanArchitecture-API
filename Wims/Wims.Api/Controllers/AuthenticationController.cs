@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Wims.Api.Filters;
 using Wims.Application.Services.Authentication;
 using Wims.Contracts.Authentication;
 
