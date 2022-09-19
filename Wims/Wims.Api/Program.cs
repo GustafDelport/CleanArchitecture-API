@@ -36,8 +36,3 @@ internal class Program
         }
     }
 }
-
-
-
-
-//17:12

@@ -1,8 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Wims.Application.Common.Interfaces.Authentication;
+using Wims.Application.Common.Interfaces.Persistance;
 using Wims.Application.Common.Interfaces.Services;
 using Wims.Infrastructure.Authentication;
+using Wims.Infrastructure.Persistance;
 using Wims.Infrastructure.Services;
 
 namespace Wims.Infrastructure
@@ -16,6 +18,8 @@ namespace Wims.Infrastructure
 
             services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }
