@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Wims.Application.Services.Authentication;
 using Wims.Contracts.Authentication;
-using FluentResults;
-using Wims.Application.Common.Errors;
+using ErrorOr;
 
 namespace Wims.Api.Controllers
 {
@@ -21,50 +20,31 @@ namespace Wims.Api.Controllers
         [HttpPost("register")]
         public IActionResult Register(RegisterRequest request)
         {
-            Result<AuthenticationResult> registerResult = _authenticationService.Register(
+           ErrorOr<AuthenticationResult> registerResult = _authenticationService.Register(
                 request.FirstName,
                 request.LastName,
                 request.Email,
                 request.Password);
 
-            if (registerResult.IsSuccess)
-            {
-                return Ok(MapAuthResult(registerResult.Value));
-            }
 
-            var firstError = registerResult.Errors[0];
+            return registerResult.MatchFirst(
+                registerResult => Ok(MapAuthResult(registerResult)),
+                firstError => Problem(statusCode: StatusCodes.Status409Conflict, detail: firstError.Description));
 
-            if (firstError is DuplicateEmailError)
-            {
-                return Problem(statusCode: StatusCodes.Status409Conflict, detail: firstError.Message);
-            }
 
-            return Problem();
         }
 
         [HttpPost("login")]
         public IActionResult Login(LoginRequest request)
         {
-            Result<AuthenticationResult> loginResult = _authenticationService.Login(
+            ErrorOr<AuthenticationResult> loginResult = _authenticationService.Login(
                 request.Email,
                 request.Password);
 
 
-            if (loginResult.IsSuccess)
-            {
-                return Ok(MapAuthResult(loginResult.Value));
-            }
-
-            foreach (var item in loginResult.Errors)
-            {
-                switch (item)
-                {
-                    case EmailNotFoundError: return Problem(statusCode: StatusCodes.Status404NotFound, detail: item.Message);
-                    case IncorrectPasswordError: return Problem(statusCode: StatusCodes.Status401Unauthorized, detail: item.Message);
-                }
-            }
-
-            return Problem();
+            return loginResult.MatchFirst(
+                loginResult => Ok(MapAuthResult(loginResult)),
+                firstError => Problem(statusCode: StatusCodes.Status409Conflict, detail: firstError.Description));
         }
 
         private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)

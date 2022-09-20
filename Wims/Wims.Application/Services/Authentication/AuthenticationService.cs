@@ -1,7 +1,7 @@
-﻿using FluentResults;
-using Wims.Application.Common.Errors;
+﻿using ErrorOr;
 using Wims.Application.Common.Interfaces.Authentication;
 using Wims.Application.Common.Interfaces.Persistance;
+using Wims.Domain.Common.Errors;
 using Wims.Domain.Entities;
 
 namespace Wims.Application.Services.Authentication
@@ -17,12 +17,12 @@ namespace Wims.Application.Services.Authentication
             _userRepository = userRepository;
         }
 
-        public Result<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
+        public ErrorOr<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
         {
             //Check if user exists
             if (_userRepository.GetUserByEmail(email) is not null)
             {
-                return Result.Fail<AuthenticationResult>(new[] { new DuplicateEmailError() });
+                return Errors.User.DuplicateEmail;
             }
 
             //Persits user to repository
@@ -44,18 +44,18 @@ namespace Wims.Application.Services.Authentication
                 token);
         }
 
-        public Result<AuthenticationResult> Login(string email, string password)
+        public ErrorOr<AuthenticationResult> Login(string email, string password)
         {
             //Check if User Exists
             if (_userRepository.GetUserByEmail(email) is not User user)
             {
-                return Result.Fail<AuthenticationResult>(new[] { new EmailNotFoundError() });
+                return Errors.Authentication.InvalidCredentials;
             }
 
             //Check if password is correct
             if (user.Password != password)
             {
-                return Result.Fail<AuthenticationResult>(new[] { new IncorrectPasswordError() });
+                return Errors.Authentication.InvalidCredentials;
             }
 
             //Generate JWT token

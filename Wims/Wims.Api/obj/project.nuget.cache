@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AXGq0vOAYKMFYniJLeUjJE3e3SsICebeX8y1xn3CMjgdC0PkvYkuNX23LdD4yt7rt/nLKVZbISRHD6iWtWOytA==",
+  "dgSpecHash": "E1rmkOwmYDXVb55dqGpeS5cIfafof0W0wll9wr+xGBz83Am9k1UhuixcqNfl1kNOxMmO4CMrQGN68KO3TzFt8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\gustaf.delport\\OneDrive - Entelect Software (Pty) Ltd\\Documents\\Pet Projects\\Wims\\Wims-API\\Wims\\Wims.Api\\Wims.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gustaf.delport\\.nuget\\packages\\erroror\\1.0.0\\erroror.1.0.0.nupkg.sha512",
     "C:\\Users\\gustaf.delport\\.nuget\\packages\\fluentresults\\3.13.0\\fluentresults.3.13.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\gustaf.delport\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

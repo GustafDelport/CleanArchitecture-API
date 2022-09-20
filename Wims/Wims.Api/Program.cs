@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.OpenApi.Models;
-using Wims.Api.Errors;
+using Wims.Api.Common.Errors;
 using Wims.Application;
 using Wims.Infrastructure;
 
@@ -40,9 +40,6 @@ internal class Program
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Wims API V1");
                 });
             }
-
-            //Method 3 Error Handling
-            //app.UseExceptionHandler("/error");
             
             app.UseHttpsRedirection();
 

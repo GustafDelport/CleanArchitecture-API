@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "ErrorOr/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FluentResults/3.13.0": {
         "type": "package",
         "dependencies": {
@@ -617,6 +630,9 @@
       "Wims.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ErrorOr": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Wims.Domain.dll": {}
         },
@@ -644,6 +660,20 @@
     }
   },
   "libraries": {
+    "ErrorOr/1.0.0": {
+      "sha512": "ebUnOo0kV+KWzEHGG/7nbSZXsGQQaG6fvrvAV62Zx75GoXz3YAbMNeirJORzvAdYynNssk77aATo3NLrjgzCKQ==",
+      "type": "package",
+      "path": "erroror/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "erroror.1.0.0.nupkg.sha512",
+        "erroror.nuspec",
+        "icon-square.png",
+        "lib/net6.0/ErrorOr.dll",
+        "lib/net6.0/ErrorOr.xml"
+      ]
+    },
     "FluentResults/3.13.0": {
       "sha512": "+4b2/Tb3fbG1F/cmVWWDev+Zgr9trpB3meCYWoPQFNijzCBy4CJagU5Ey45Aiy8GKd/LyPAhER0eWfKHf/B9iw==",
       "type": "package",
@@ -1927,6 +1957,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ErrorOr >= 1.0.0",
       "FluentResults >= 3.13.0",
       "Microsoft.Extensions.Configuration >= 6.0.1",
       "Swashbuckle.AspNetCore >= 6.4.0",
@@ -1991,6 +2022,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "ErrorOr": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "FluentResults": {
             "target": "Package",
             "version": "[3.13.0, )"

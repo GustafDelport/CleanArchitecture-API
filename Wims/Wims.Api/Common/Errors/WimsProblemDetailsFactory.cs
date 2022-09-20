@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Options;
 using System.Diagnostics;
 
-namespace Wims.Api.Errors
+namespace Wims.Api.Common.Errors
 {
     public class WimsProblemDetailsFactory : ProblemDetailsFactory
     {

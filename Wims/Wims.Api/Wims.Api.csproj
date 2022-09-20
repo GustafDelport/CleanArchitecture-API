@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ErrorOr" Version="1.0.0" />
     <PackageReference Include="FluentResults" Version="3.13.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
@@ -17,6 +18,10 @@
     <ProjectReference Include="..\Wims.Application\Wims.Application.csproj" />
     <ProjectReference Include="..\Wims.Contracts\Wims.Contracts.csproj" />
     <ProjectReference Include="..\Wims.Infrastructure\Wims.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Errors\" />
   </ItemGroup>
 
 </Project>
