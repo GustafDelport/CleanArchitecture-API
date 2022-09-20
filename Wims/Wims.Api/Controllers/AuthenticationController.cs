@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Wims.Application.Services.Authentication;
 using Wims.Contracts.Authentication;
 using ErrorOr;
+using Wims.Application.Services.Authentication.Commands;
+using Wims.Application.Services.Authentication.Queries;
+using Wims.Application.Services.Authentication.Common;
 
 namespace Wims.Api.Controllers
 {
@@ -9,17 +11,19 @@ namespace Wims.Api.Controllers
     public class AuthenticationController : ApiController
     {
 
-        private readonly IAuthenticationService _authenticationService;
+        private readonly IAuthenticationCommandService _authenticationCommandService;
+        private readonly IAuthenticationQueryService _authenticationQueryService;
 
-        public AuthenticationController(IAuthenticationService authenticationService)
+        public AuthenticationController(IAuthenticationCommandService authenticationService, IAuthenticationQueryService authenticationQueryService)
         {
-            _authenticationService = authenticationService;
+            _authenticationCommandService = authenticationService;
+            _authenticationQueryService = authenticationQueryService;
         }
 
         [HttpPost("register")]
         public IActionResult Register(RegisterRequest request)
         {
-           ErrorOr<AuthenticationResult> registerResult = _authenticationService.Register(
+           ErrorOr<AuthenticationResult> registerResult = _authenticationCommandService.Register(
                 request.FirstName,
                 request.LastName,
                 request.Email,
@@ -35,7 +39,7 @@ namespace Wims.Api.Controllers
         [HttpPost("login")]
         public IActionResult Login(LoginRequest request)
         {
-            ErrorOr<AuthenticationResult> loginResult = _authenticationService.Login(
+            ErrorOr<AuthenticationResult> loginResult = _authenticationQueryService.Login(
                 request.Email,
                 request.Password);
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Wims.Application.Services.Authentication;
+using Wims.Application.Services.Authentication.Commands;
+using Wims.Application.Services.Authentication.Queries;
 
 namespace Wims.Application
 {
@@ -7,7 +8,8 @@ namespace Wims.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<IAuthenticationCommandService, AuthenticationCommandService>();
+            services.AddScoped<IAuthenticationQueryService, AuthenticationQueryService>();
 
             return services;
         }
