@@ -140,6 +140,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "FluentResults": {
               "target": "Package",
               "version": "[3.13.0, )"

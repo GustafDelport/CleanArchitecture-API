@@ -318,6 +318,7 @@
       },
       "Wims.Application/1.0.0": {
         "dependencies": {
+          "ErrorOr": "1.0.0",
           "FluentResults": "3.13.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Wims.Domain": "1.0.0"

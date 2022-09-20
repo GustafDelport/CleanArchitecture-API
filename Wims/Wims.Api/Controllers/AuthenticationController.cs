@@ -5,9 +5,8 @@ using ErrorOr;
 
 namespace Wims.Api.Controllers
 {
-    [ApiController]
     [Route("auth")]
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController : ApiController
     {
 
         private readonly IAuthenticationService _authenticationService;
@@ -27,10 +26,9 @@ namespace Wims.Api.Controllers
                 request.Password);
 
 
-            return registerResult.MatchFirst(
+            return registerResult.Match(
                 registerResult => Ok(MapAuthResult(registerResult)),
-                firstError => Problem(statusCode: StatusCodes.Status409Conflict, detail: firstError.Description));
-
+                errors => Problem(errors));
 
         }
 
@@ -42,9 +40,9 @@ namespace Wims.Api.Controllers
                 request.Password);
 
 
-            return loginResult.MatchFirst(
+            return loginResult.Match(
                 loginResult => Ok(MapAuthResult(loginResult)),
-                firstError => Problem(statusCode: StatusCodes.Status409Conflict, detail: firstError.Description));
+                errors => Problem(errors));
         }
 
         private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
