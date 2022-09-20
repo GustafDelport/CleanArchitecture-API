@@ -261,6 +261,15 @@
           }
         }
       },
+      "OneOf/3.0.223": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OneOf.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -552,7 +561,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Wims.Domain": "1.0.0"
+          "Wims.Domain": "1.0.0",
+          "oneof": "3.0.223"
         },
         "compile": {
           "bin/placeholder/Wims.Application.dll": {}
@@ -1206,6 +1216,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "OneOf/3.0.223": {
+      "sha512": "YWabiHBFfDdKIO7/TEa72mARVVo5u5FqFnfXuTqjIupMvJlhoH8d0m4uKtczaINuT0vGR1qlXJayeU6bTw5myg==",
+      "type": "package",
+      "path": "oneof/3.0.223",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/OneOf.dll",
+        "lib/net45/OneOf.dll",
+        "lib/netstandard1.3/OneOf.dll",
+        "lib/netstandard2.0/OneOf.dll",
+        "oneof.3.0.223.nupkg.sha512",
+        "oneof.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.4.0": {
       "sha512": "eUBr4TW0up6oKDA5Xwkul289uqSMgY0xGN4pnbOIBqCcN9VKGGaPvHX3vWaG/hvocfGDP+MGzMA0bBBKz2fkmQ==",
       "type": "package",
@@ -1783,7 +1808,8 @@
       "Swashbuckle.AspNetCore >= 6.4.0",
       "Wims.Application >= 1.0.0",
       "Wims.Contracts >= 1.0.0",
-      "Wims.Infrastructure >= 1.0.0"
+      "Wims.Infrastructure >= 1.0.0",
+      "oneof >= 3.0.223"
     ]
   },
   "packageFolders": {
@@ -1849,6 +1875,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.4.0, )"
+          },
+          "oneof": {
+            "target": "Package",
+            "version": "[3.0.223, )"
           }
         },
         "imports": [

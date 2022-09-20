@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.OpenApi.Models;
 using Wims.Api.Errors;
-using Wims.Api.Filters;
-using Wims.Api.Middleware;
 using Wims.Application;
 using Wims.Infrastructure;
 
@@ -16,11 +14,9 @@ internal class Program
                 .AddApplication()
                 .AddInfrastructure(builder.Configuration);
 
-            //Method 2 Error Handling
-            //builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingFilterAttribute>());
             builder.Services.AddControllers();
 
-            //builder.Services.AddSingleton<ProblemDetailsFactory, WimsProblemDetailsFactory>();
+            builder.Services.AddSingleton<ProblemDetailsFactory, WimsProblemDetailsFactory>();
 
             builder.Services.AddEndpointsApiExplorer();
 
@@ -44,9 +40,6 @@ internal class Program
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Wims API V1");
                 });
             }
-
-            //Method 1 Error Handling
-            //app.UseMiddleware<ErrorHandlingMiddleware>();
 
             //Method 3 Error Handling
             app.UseExceptionHandler("/error");

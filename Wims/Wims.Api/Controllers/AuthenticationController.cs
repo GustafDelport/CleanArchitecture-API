@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Wims.Api.Filters;
+using OneOf;
+using Wims.Application.Common.Errors;
 using Wims.Application.Services.Authentication;
 using Wims.Contracts.Authentication;
 
@@ -20,20 +21,15 @@ namespace Wims.Api.Controllers
         [HttpPost("register")]
         public IActionResult Register(RegisterRequest request)
         {
-            var authResult = _authenticationService.Register(
+            OneOf<AuthenticationResult, DuplicateEmailError> registerResult = _authenticationService.Register(
                 request.FirstName,
                 request.LastName,
                 request.Email,
                 request.Password);
 
-            var response = new AuthenticationResponse(
-                authResult.User.Id,
-                authResult.User.FirstName,
-                authResult.User.LastName,
-                authResult.User.Email,
-                authResult.Token);
-
-            return Ok(response);
+            return registerResult.Match(
+                authResult => Ok(MapAuthResult(authResult)),
+                _ => Problem(statusCode: StatusCodes.Status409Conflict, title: "Email already exists"));
         }
 
         [HttpPost("login")]
@@ -51,6 +47,16 @@ namespace Wims.Api.Controllers
                 authResult.Token);
 
             return Ok(response);
+        }
+
+        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+        {
+            return new AuthenticationResponse(
+                            authResult.User.Id,
+                            authResult.User.FirstName,
+                            authResult.User.LastName,
+                            authResult.User.Email,
+                            authResult.Token);
         }
     }
 }

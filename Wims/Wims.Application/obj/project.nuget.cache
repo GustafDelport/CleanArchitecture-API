@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+DVpMiatWrbUeq86PN2WrcTQiXYZXT8S9JgdTK5b7zAoz7qSR76X46j0Am2rG1xshmjcf0wHChYF/Kuv2u2R+g==",
+  "dgSpecHash": "9nax7hCA6hgpOTFzu7zmiaeaiySMxcL3V94jeVlQIUOrQPuJ52TlAzGhE/q59SMuJW+GKH7Ax0W4tlprb4XzQw==",
   "success": true,
   "projectFilePath": "C:\\Users\\gustaf.delport\\OneDrive - Entelect Software (Pty) Ltd\\Documents\\Pet Projects\\Wims\\Wims-API\\Wims\\Wims.Application\\Wims.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gustaf.delport\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\gustaf.delport\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\gustaf.delport\\.nuget\\packages\\oneof\\3.0.223\\oneof.3.0.223.nupkg.sha512"
   ],
   "logs": []
 }

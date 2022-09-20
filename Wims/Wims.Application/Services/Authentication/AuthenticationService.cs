@@ -1,4 +1,6 @@
-﻿using Wims.Application.Common.Interfaces.Authentication;
+﻿using OneOf;
+using Wims.Application.Common.Errors;
+using Wims.Application.Common.Interfaces.Authentication;
 using Wims.Application.Common.Interfaces.Persistance;
 using Wims.Domain.Entities;
 
@@ -15,13 +17,13 @@ namespace Wims.Application.Services.Authentication
             _userRepository = userRepository;
         }
 
-        public AuthenticationResult Register(string firstName, string lastName, string email, string password)
+        public OneOf<AuthenticationResult, DuplicateEmailError> Register(string firstName, string lastName, string email, string password)
         {
             //Check if user exists
             if (_userRepository.GetUserByEmail(email) is not null)
             {
-                throw new Exception("User with given email already exists");
-                //return new AuthenticationResult(false, "User already exists");
+                //throw new DuplicateEmailException();
+                return new DuplicateEmailError();
             }
 
             //Persits user to repository
