@@ -1,7 +1,7 @@
 ﻿using ErrorOr;
 using Wims.Application.Services.Authentication.Common;
 
-namespace Wims.Application.Services.Authentication.Commands
+namespace Wims.Application.Services.Authentication.Commands.Register
 {
     public interface IAuthenticationCommandService
     {

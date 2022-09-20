@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Wims.Application.Services.Authentication.Common;
 
-namespace Wims.Application.Services.Authentication.Queries
+namespace Wims.Application.Services.Authentication.Queries.Login
 {
     public interface IAuthenticationQueryService
     {

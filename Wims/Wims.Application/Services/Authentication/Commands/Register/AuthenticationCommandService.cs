@@ -5,7 +5,7 @@ using Wims.Application.Services.Authentication.Common;
 using Wims.Domain.Common.Errors;
 using Wims.Domain.Entities;
 
-namespace Wims.Application.Services.Authentication.Commands
+namespace Wims.Application.Services.Authentication.Commands.Register
 {
     public class AuthenticationCommandService : IAuthenticationCommandService
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Wims.Application.Services.Authentication.Commands;
-using Wims.Application.Services.Authentication.Queries;
+using Wims.Application.Services.Authentication.Commands.Register;
+using Wims.Application.Services.Authentication.Queries.Login;
 
 namespace Wims.Application
 {

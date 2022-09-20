@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Wims.Contracts.Authentication;
 using ErrorOr;
-using Wims.Application.Services.Authentication.Commands;
-using Wims.Application.Services.Authentication.Queries;
 using Wims.Application.Services.Authentication.Common;
+using Wims.Application.Services.Authentication.Commands.Register;
+using Wims.Application.Services.Authentication.Queries.Login;
 
 namespace Wims.Api.Controllers
 {
@@ -14,7 +14,9 @@ namespace Wims.Api.Controllers
         private readonly IAuthenticationCommandService _authenticationCommandService;
         private readonly IAuthenticationQueryService _authenticationQueryService;
 
-        public AuthenticationController(IAuthenticationCommandService authenticationService, IAuthenticationQueryService authenticationQueryService)
+        public AuthenticationController(
+            IAuthenticationCommandService authenticationService,
+            IAuthenticationQueryService authenticationQueryService)
         {
             _authenticationCommandService = authenticationService;
             _authenticationQueryService = authenticationQueryService;
