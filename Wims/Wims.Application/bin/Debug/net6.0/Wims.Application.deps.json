@@ -8,11 +8,24 @@
     ".NETCoreApp,Version=v6.0": {
       "Wims.Application/1.0.0": {
         "dependencies": {
+          "FluentResults": "3.13.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Wims.Domain": "1.0.0"
         },
         "runtime": {
           "Wims.Application.dll": {}
+        }
+      },
+      "FluentResults/3.13.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentResults.dll": {
+            "assemblyVersion": "3.13.0.0",
+            "fileVersion": "3.13.0.0"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
@@ -23,6 +36,15 @@
           }
         }
       },
+      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.322.12309"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {},
       "Wims.Domain/1.0.0": {
         "runtime": {
           "Wims.Domain.dll": {}
@@ -36,12 +58,33 @@
       "serviceable": false,
       "sha512": ""
     },
+    "FluentResults/3.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+4b2/Tb3fbG1F/cmVWWDev+Zgr9trpB3meCYWoPQFNijzCBy4CJagU5Ey45Aiy8GKd/LyPAhER0eWfKHf/B9iw==",
+      "path": "fluentresults/3.13.0",
+      "hashPath": "fluentresults.3.13.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dzB2Cgg+JmrouhjkcQGzSFjjvpwlq353i8oBQO2GWNjCXSzhbtBRUf28HSauWe7eib3wYOdb3tItdjRwAdwCSg==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "Wims.Domain/1.0.0": {
       "type": "project",

@@ -1,4 +1,4 @@
-﻿using OneOf;
+﻿using FluentResults;
 using Wims.Application.Common.Errors;
 using Wims.Application.Common.Interfaces.Authentication;
 using Wims.Application.Common.Interfaces.Persistance;
@@ -17,13 +17,12 @@ namespace Wims.Application.Services.Authentication
             _userRepository = userRepository;
         }
 
-        public OneOf<AuthenticationResult, DuplicateEmailError> Register(string firstName, string lastName, string email, string password)
+        public Result<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
         {
             //Check if user exists
             if (_userRepository.GetUserByEmail(email) is not null)
             {
-                //throw new DuplicateEmailException();
-                return new DuplicateEmailError();
+                return Result.Fail<AuthenticationResult>(new[] { new DuplicateEmailError() });
             }
 
             //Persits user to repository
@@ -45,18 +44,18 @@ namespace Wims.Application.Services.Authentication
                 token);
         }
 
-        public AuthenticationResult Login(string email, string password)
+        public Result<AuthenticationResult> Login(string email, string password)
         {
             //Check if User Exists
             if (_userRepository.GetUserByEmail(email) is not User user)
             {
-                throw new Exception("User with given email does not exists");
+                return Result.Fail<AuthenticationResult>(new[] { new EmailNotFoundError() });
             }
 
             //Check if password is correct
             if (user.Password != password)
             {
-                throw new Exception("Incorrect Password");
+                return Result.Fail<AuthenticationResult>(new[] { new IncorrectPasswordError() });
             }
 
             //Generate JWT token

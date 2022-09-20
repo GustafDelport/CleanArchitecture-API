@@ -42,7 +42,7 @@ internal class Program
             }
 
             //Method 3 Error Handling
-            app.UseExceptionHandler("/error");
+            //app.UseExceptionHandler("/error");
             
             app.UseHttpsRedirection();
 

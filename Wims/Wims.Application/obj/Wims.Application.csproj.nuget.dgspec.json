@@ -49,13 +49,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentResults": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"
-            },
-            "oneof": {
-              "target": "Package",
-              "version": "[3.0.223, )"
             }
           },
           "imports": [
