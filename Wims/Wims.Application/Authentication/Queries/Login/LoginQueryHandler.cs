@@ -33,7 +33,7 @@ namespace Wims.Application.Authentication.Queries.Login
             //Check if password is correct
             if (user.Password != query.Password)
             {
-                return Errors.Authentication.InvalidCredentials;
+                return Errors.Authentication.IncorrectPassword;
             }
 
             //Generate JWT token

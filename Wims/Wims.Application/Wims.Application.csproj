@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Wims.Domain\Wims.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Common\Errors\" />
-  </ItemGroup>
-
 </Project>
