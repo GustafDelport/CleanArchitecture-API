@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Wims.Application.Services.Authentication.Commands.Register;
-using Wims.Application.Services.Authentication.Queries.Login;
+using MediatR;
 
 namespace Wims.Application
 {
@@ -8,8 +7,7 @@ namespace Wims.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<IAuthenticationCommandService, AuthenticationCommandService>();
-            services.AddScoped<IAuthenticationQueryService, AuthenticationQueryService>();
+            services.AddMediatR(typeof(DependencyInjectionApplication).Assembly);
 
             return services;
         }

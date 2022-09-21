@@ -1,36 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Wims.Contracts.Authentication;
 using ErrorOr;
-using Wims.Application.Services.Authentication.Common;
-using Wims.Application.Services.Authentication.Commands.Register;
-using Wims.Application.Services.Authentication.Queries.Login;
+using MediatR;
+using Wims.Application.Authentication.Commands.Register;
+using Wims.Application.Authentication.Common;
+using Wims.Application.Authentication.Queries.Login;
 
 namespace Wims.Api.Controllers
 {
     [Route("auth")]
     public class AuthenticationController : ApiController
     {
+        private readonly ISender _mediator;
 
-        private readonly IAuthenticationCommandService _authenticationCommandService;
-        private readonly IAuthenticationQueryService _authenticationQueryService;
-
-        public AuthenticationController(
-            IAuthenticationCommandService authenticationService,
-            IAuthenticationQueryService authenticationQueryService)
+        public AuthenticationController(ISender mediator)
         {
-            _authenticationCommandService = authenticationService;
-            _authenticationQueryService = authenticationQueryService;
+            _mediator = mediator;
         }
 
         [HttpPost("register")]
-        public IActionResult Register(RegisterRequest request)
+        public async Task<IActionResult> Register(RegisterRequest request)
         {
-           ErrorOr<AuthenticationResult> registerResult = _authenticationCommandService.Register(
-                request.FirstName,
-                request.LastName,
-                request.Email,
-                request.Password);
+            var command = new RegisterCommand(request.FirstName, request.LastName, request.Email, request.Password);
 
+            ErrorOr<AuthenticationResult> registerResult = await _mediator.Send(command);
 
             return registerResult.Match(
                 registerResult => Ok(MapAuthResult(registerResult)),
@@ -39,12 +32,11 @@ namespace Wims.Api.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login(LoginRequest request)
+        public async Task<IActionResult> Login(LoginRequest request)
         {
-            ErrorOr<AuthenticationResult> loginResult = _authenticationQueryService.Login(
-                request.Email,
-                request.Password);
+            var query = new LoginQuery(request.Email, request.Password);
 
+            ErrorOr<AuthenticationResult> loginResult = await _mediator.Send(query);
 
             return loginResult.Match(
                 loginResult => Ok(MapAuthResult(loginResult)),

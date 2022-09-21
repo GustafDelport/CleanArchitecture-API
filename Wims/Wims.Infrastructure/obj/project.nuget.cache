@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "nmMyiPruTq6/wy3t7Z+KAROxX3NYtq9VmQhYj4X7CuZq8xqnEXqZV+haqPQ/UHuCoqzp1GcO3tWeg77OVxgAKw==",
+  "dgSpecHash": "2dSAhhgLXnE3gPX1Hm2xd3fqE6xH25YW1ANXS2u7/SGGqpQlWHItSykSV5Cckpn9Hj7mMFEQXSwZ/iJwY3z9FA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gustaf.delport\\OneDrive - Entelect Software (Pty) Ltd\\Documents\\Pet Projects\\Wims\\Wims-API\\Wims\\Wims.Infrastructure\\Wims.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gustaf.delport\\.nuget\\packages\\erroror\\1.0.0\\erroror.1.0.0.nupkg.sha512",
     "C:\\Users\\gustaf.delport\\.nuget\\packages\\fluentresults\\3.13.0\\fluentresults.3.13.0.nupkg.sha512",
+    "C:\\Users\\gustaf.delport\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\gustaf.delport\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\gustaf.delport\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\gustaf.delport\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\gustaf.delport\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
