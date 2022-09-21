@@ -1,6 +1,4 @@
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Microsoft.OpenApi.Models;
-using Wims.Api.Common.Errors;
+using Wims.Api;
 using Wims.Application;
 using Wims.Infrastructure;
 
@@ -11,23 +9,9 @@ internal class Program
         var builder = WebApplication.CreateBuilder(args);
         {
             builder.Services
+                .AddPresentation()
                 .AddApplication()
                 .AddInfrastructure(builder.Configuration);
-
-            builder.Services.AddControllers();
-
-            builder.Services.AddSingleton<ProblemDetailsFactory, WimsProblemDetailsFactory>();
-
-            builder.Services.AddEndpointsApiExplorer();
-
-            builder.Services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Title = "Wims API",
-                    Version = "v1",
-                });
-            });
         }
 
         var app = builder.Build();

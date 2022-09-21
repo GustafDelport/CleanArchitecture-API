@@ -24,6 +24,8 @@ namespace Wims.Application.Authentication.Queries.Login
 
         public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery query, CancellationToken cancellationToken)
         {
+            await Task.CompletedTask;
+
             //Check if User Exists
             if (_userRepository.GetUserByEmail(query.Email) is not User user)
             {
@@ -33,7 +35,7 @@ namespace Wims.Application.Authentication.Queries.Login
             //Check if password is correct
             if (user.Password != query.Password)
             {
-                return Errors.Authentication.IncorrectPassword;
+                return Errors.Authentication.InvalidCredentials;
             }
 
             //Generate JWT token

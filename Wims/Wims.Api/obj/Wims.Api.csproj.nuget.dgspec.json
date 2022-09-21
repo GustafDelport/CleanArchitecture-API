@@ -70,6 +70,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
