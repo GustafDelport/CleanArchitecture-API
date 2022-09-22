@@ -12,8 +12,13 @@ namespace Wims.Application.Common.Behaviors
             CancellationToken cancellationToken,
             RequestHandlerDelegate<ErrorOr<AuthenticationResult>> next)
         {
+            //Runs before Command is handled
             var result = await next();
 
+            //Runs after the command is handled
+
+
+            //Returns
             return result;
         }
     }
