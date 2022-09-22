@@ -26,9 +26,7 @@ namespace Wims.Api.Controllers
         {
             var command = _mapper.Map<RegisterCommand>(request);
 
-            //new RegisterCommand(request.FirstName, request.LastName, request.Email, request.Password);
-
-            ErrorOr < AuthenticationResult> registerResult = await _mediator.Send(command);
+            ErrorOr<AuthenticationResult> registerResult = await _mediator.Send(command);
 
             return registerResult.Match(
                 registerResult => Ok(_mapper.Map<AuthenticationResponse>(registerResult)),
