@@ -4,6 +4,8 @@ using Wims.Application.Authentication.Commands.Register;
 using ErrorOr;
 using Wims.Application.Authentication.Common;
 using Wims.Application.Common.Behaviors;
+using FluentValidation;
+using System.Reflection;
 
 namespace Wims.Application
 {
@@ -12,7 +14,12 @@ namespace Wims.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddMediatR(typeof(DependencyInjectionApplication).Assembly);
-            services.AddScoped<IPipelineBehavior<RegisterCommand,ErrorOr<AuthenticationResult>>,ValidationRegisterCommandBehavior>();
+
+            services.AddScoped(
+                typeof(IPipelineBehavior<,>),
+                typeof(ValidationBehavior<,>));
+
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             return services;
         }

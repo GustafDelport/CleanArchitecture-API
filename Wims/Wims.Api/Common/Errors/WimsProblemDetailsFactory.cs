@@ -72,9 +72,45 @@ namespace Wims.Api.Common.Errors
             
         }
 
-        public override ValidationProblemDetails CreateValidationProblemDetails(HttpContext httpContext, ModelStateDictionary modelStateDictionary, int? statusCode = null, string? title = null, string? type = null, string? detail = null, string? instance = null)
+        public override ValidationProblemDetails CreateValidationProblemDetails(
+            HttpContext httpContext,
+            ModelStateDictionary modelStateDictionary, 
+            int? statusCode = null,
+            string? title = null,
+            string? type = null,
+            string? detail = null,
+            string? instance = null)
         {
-            throw new NotImplementedException();
+            statusCode ??= 400;
+            type ??= "https://tools.ietf.org/html/rfc7231#section-6.5.1";
+            instance ??= httpContext.Request.Path;
+
+            var problemDetails = new ValidationProblemDetails(modelStateDictionary)
+            {
+                Status = statusCode,
+                Type = type,
+                Instance = instance
+            };
+
+            if (title != null)
+            {
+                problemDetails.Title = title;
+            }
+
+            var traceId = Activity.Current?.Id ?? httpContext?.TraceIdentifier;
+            if (traceId != null)
+            {
+                problemDetails.Extensions["traceId"] = traceId;
+            }
+
+            var errors = httpContext?.Items[HttpContextItemKeys.Errors] as List<Error>;
+
+            if (errors is not null)
+            {
+                problemDetails.Extensions.Add("errorCodes", errors.Select(e => e.Code));
+            }
+
+            return problemDetails;
         }
     }
 }
