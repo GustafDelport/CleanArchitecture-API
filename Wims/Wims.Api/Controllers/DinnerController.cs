@@ -3,7 +3,6 @@
 namespace Wims.Api.Controllers
 {
     [Route("[controller]")]
-
     public class DinnersController : ApiController
     {
         [HttpGet]
